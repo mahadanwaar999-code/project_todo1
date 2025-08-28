@@ -119,7 +119,7 @@ function showCustomAlert(message) {
 document.addEventListener("DOMContentLoaded", function () {
     // Redirect to login if no user is logged in
     if (!localStorage.getItem('currentUser')) {
-        window.location.href = "../index.html";
+        window.location.href = "index.html";
         return;
     }
 
@@ -602,4 +602,5 @@ function updateTaskStatus(boardIdx, folderIdx, taskIdx, newStatus, liElement) {
 }
 
 // View Boards Button
+
 document.getElementById("viewBoardsBtn").addEventListener("click", renderBoards);
